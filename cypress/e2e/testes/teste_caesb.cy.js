@@ -2,10 +2,10 @@
 
 describe('Acessar o CAC TAT', function(){
     this.beforeEach(function(){
-        cy.visit('https://cac-tat.s3.eu-central-1.amazonaws.com/index.html')
+        cy.visit('https://t2.homolog.caesb.df.gov.br/seguranca/app/login')
     })
     it('verifica titulo da aplicação', function(){
-        cy.title().should('be.equal','Central de Atendimento ao Cliente TAT')
+        cy.title().should('ERP Caesb')
     });
     it.only('preenche os campos obrigatorios e envia o formulario', function(){
         cy.get('#firstName').type('Jackson')        

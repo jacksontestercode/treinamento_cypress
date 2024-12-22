@@ -1,8 +1,9 @@
-/// <reference types = "Cypress" />
+/// <reference types = "cypress" />
 
 describe('Testes GCOM', function(){
     beforeEach(function(){
         cy.visit('https://t2.homolog.caesb.df.gov.br/seguranca/app/login')
+        cy.title().should('contain','ERP Caesb')
     })
     it('Fazer login', function(){
         cy.get('#j_username').type('jacksonmendes')

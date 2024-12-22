@@ -1,7 +1,7 @@
 /// <reference types = "Cypress" />
 
 describe('Testes GCOM', function(){
-    this.beforeEach(function(){
+    beforeEach(function(){
         cy.visit('https://t2.homolog.caesb.df.gov.br/seguranca/app/login')
     })
     it('Fazer login', function(){

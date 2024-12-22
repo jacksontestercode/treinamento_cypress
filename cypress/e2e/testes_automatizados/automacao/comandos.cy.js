@@ -1,6 +1,6 @@
 /// <reference types = "Cypress" />
 
-describe('Acessar o CAC TAT', function(){
+describe.only('Acessar o CAC TAT', function(){
     this.beforeEach(function(){
         cy.visit('https://cac-tat.s3.eu-central-1.amazonaws.com/index.html')
     })

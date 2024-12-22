@@ -4,6 +4,7 @@ describe('GCOM - Atendimento Comercial e Serviços', function(){
     // O beforeEach será executado antes de cada teste (it)
         beforeEach(function(){
             cy.visit('https://t2.homolog.caesb.df.gov.br/seguranca/app/login')
+            cy.title().should('contain','ERP Caesb') // Essa estrutura é usada para verificar se o título da página (aquele exibido na aba do navegador) é exatamente 'ERP Caesb'.
         })
         it('Fazer login', function(){
              // Realiza o login

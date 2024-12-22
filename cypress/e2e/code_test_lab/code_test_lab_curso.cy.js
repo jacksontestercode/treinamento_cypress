@@ -12,7 +12,8 @@ describe.only('Acessar o CAC TAT', function(){
         cy.get('#lastName').type('Mendes')
         cy.get('#email').type('jacksonfla6@gmail.com')
         cy.get('#open-text-area').type('Teste')        
-        cy.get('button[type="submit"]').click()
+        cy.get('.button').click()  // Seleciona o botão pela classe e clica nele
+       // cy.get('button[type="submit"]').click()
     });
 });
 

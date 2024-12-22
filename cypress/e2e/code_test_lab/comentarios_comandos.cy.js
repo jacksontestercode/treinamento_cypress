@@ -1,4 +1,4 @@
-/// <reference types = 'Cypress' />
+/// <reference types = 'cypress' />
 
 describe('GCOM - Atendimento Comercial e Serviços', function(){
     // O beforeEach será executado antes de cada teste (it)

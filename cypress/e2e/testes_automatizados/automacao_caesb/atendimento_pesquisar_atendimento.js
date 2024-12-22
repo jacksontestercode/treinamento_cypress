@@ -12,7 +12,7 @@ describe('Testes GCOM', function(){
         cy.get(':nth-child(4) > .menu-button > .menu-button-title').click()
         cy.get(':nth-child(3) > .submenuWrapper > [href="#"] > .label').click()
         cy.contains('span.label', 'Pesquisar Atendimento', { timeout: 10000 }).should('be.visible').click()    
-        cy.get('#formAtendimentoPesquisa\\:j_idt411', { timeout: 10000 }).should('be.visible').type('2024121833162272')
+        cy.get('#formAtendimentoPesquisa\\:j_idt411', { timeout: 20000 }).should('be.visible').type('2024122233162291')
         cy.get('span.ui-button-text.ui-c').contains('Pesquisar').click()
         cy.get('span.ui-button-icon-left.ui-icon.ui-c.ui-icon-triangle-1-s').click()
         cy.contains('span.ui-menuitem-text', 'Editar').click()

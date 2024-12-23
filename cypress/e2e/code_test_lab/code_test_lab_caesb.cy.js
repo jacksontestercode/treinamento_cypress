@@ -5,7 +5,7 @@ describe('Testes GCOM', function(){
         cy.visit('https://t2.homolog.caesb.df.gov.br/seguranca/app/login')
         cy.title().should('contain','ERP Caesb')
     })
-    it('Fazer login', function(){
+    it.only('Fazer login', function(){
         cy.get('#j_username').type('jacksonmendes')
         cy.get('#j_password').type('Administrador)))')
         cy.get('#btEntrar').click()

@@ -89,7 +89,7 @@ describe('Atendimento OSVE Pesquisa', function() {
         // Realiza as pesquisas nas seguintes ordens:
         // Recebida, Em execução, Cancelada, Aguardando, Concluída
         
-        const situacoes = ['Recebida', 'Em execução', 'Cancelada', 'Aguardando', 'Concluída']
+        const situacoes = ['Recebida', 'Em execução', 'Cancelada', 'Aguardando', 'Concluída',]
         
         situacoes.forEach((situacao) => {
             cy.get('#form1\\:j_idt414 > .ui-selectonemenu-trigger > .ui-icon').click()
